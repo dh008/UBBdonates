@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+</head>
+ 
+<body>
+  <div class="container">
+    <div class="circle">
+      <form action="../../app/http/controllers/signup.php" class="sign-form" method="post" autocomplete="off">
+        <h1>FSEGAdonates</h1>
+        <h3>Sign Up</h3>
+
+        <input type="text" name="last_name" class="form-input" placeholder="Last Name" id="username" required>
+        <input type="text" name="first_name" class="form-input" placeholder="First Name" id="username" required>
+        <input type="text" name="username" class="form-input" placeholder="Username" id="username" required>
+        <input type="password" name="password" class="form-input" placeholder="Parola" id="password" required>
+        <input type="email" name="email" class="form-input" placeholder="Email" id="email" required>
+
+        <input type="submit" class="form-submit"  value="Sign Up">
+        <p class="existing">
+            Do you have an account?
+            <a href="login.html">Login</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>

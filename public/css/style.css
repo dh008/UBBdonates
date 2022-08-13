@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", cursive;
+  background-image: url("../../storage/app/media/poza.jpg");
+  background-position: center;
+  /*background-size:cover;*/
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-size: 1950px 1200px;
+  background-repeat: no-repeat;
+}
+
+body > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+body > .container > .circle {
+  position: relative;
+  width: 50vw;
+  height: 90vh;
+  padding: 15px;
+  border: 10px solid white;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  width: 45%;
+}
+
+.sign-form .form-input {
+  /* padding: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  border: none;
+  text-align: center; */
+
+  background-color: white;
+  height: 40px;
+  width: 50%;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.sign-form .form-input.w50 {
+  width: 50%;
+}
+
+.sign-form > .form-input.descriptionarea {
+  font-size: 14px;
+  height: auto;
+  width: 50%;
+}
+
+.sign-form > .form-input.file {
+  background: white;
+}
+
+.sign-form > .form-submit {
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 20px;
+  border: none;
+  text-align: center;
+}
+
+.sign-form > label {
+  font-size: 20px;
+}
+
+.sign-form > .existing {
+  color: white;
+}
+
+.sign-form > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+body > .container > .menu {
+  flex: 0 0 20%;
+  background: black;
+  color: white;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > .menu > .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 20%;
+}
+
+.container > .menu > .logo > img {
+  width: 50px;
+}
+
+.container > .menu > .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+
+  font-size: 20px;
+
+  margin-bottom: 40%;
+}
+
+.container > .menu > .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.container > .menu > .items > a {
+  padding: 20px 0;
+  padding-left: 10%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.container > .menu > .items > a.active {
+  border-left: 5px solid white;
+}
+
+.container > .menu > .items > a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+body > .container > .content {
+  flex: 0 0 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+body > .container > .content > .donation-slider {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 25px;
+  max-width: calc(100vw - 60%);
+  width: 100%;
+  padding: 0 25px;
+  padding-bottom: 50px;
+
+  overflow-x: auto;
+}
+
+.donation-slider > .donation-card {
+  flex:0 0 max(300px, 50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+  height: fit-content;
+
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.donation-slider > .donation-card > .image {
+  width: 100%;
+}
+
+.donation-slider > .donation-card > .image > img {
+  width: 50%;
+  max-height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donation-slider > .donation-card > .description {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.donation-slider > .donation-card > .goal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donation-slider > .donation-card > .goal > span:nth-child(2) {
+  color: rgba(60, 213, 60, 0.7);
+}
+
+.donation-slider > .donation-card > .donate {
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  
+  padding: 25px 0;
+}
+
+.transactions-table {
+  background: #cab48d;
+  background-color: rgba(202,180,141,0.5);
+  padding: 15px;
+  margin-top: 165px;
+  height: 40vh;
+  max-height: 40vh;
+  overflow-y: scroll;
+  border-spacing: 10px;
+  max-width: 75vw;
+  border: 1px solid;
+}
+
+.transactions-table > tbody > tr > td > a.modify {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px;
+  background: black;
+  border: 1px solid;
+}
+
+.StripeElement {
+  background-color: white;
+  height: 40px;
+  width: 50%;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}

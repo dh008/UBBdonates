@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+
+</head>
+ 
+<body>
+  <div class="container">
+    <div class="circle">
+      <form action="../../app/http/controllers/login.php" class="sign-form" method="post">
+        <h1>FSEGAdonates</h1>
+        <h3>Log In</h3>
+
+        <input type="text" class="form-input" name="username" placeholder="username" required>
+        <input type="password" class="form-input" name="password" placeholder="password" required>
+
+        <input type="submit" class="form-submit" value="Login">
+        <p class="existing">
+          Did you forget your password?
+          <a href="../../app/http/controllers/initiate_password_reset.php" target="_blank">Reset Password</a>
+        </p>
+        <p class="existing">
+          Don't have account?
+          <a href="signup.html">Register</a>
+        </p>
+  
+      </form>
+    </div>
+  </div>
+</body>
